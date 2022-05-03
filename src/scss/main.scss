@@ -1,0 +1,28 @@
+@import 'base.scss';
+@import 'header.scss';
+@import 'leftMenu.scss';
+@import 'topInfo.scss';
+@import 'footer.scss';
+@import 'adminPage.scss';
+@import 'confirm.scss'; // подлежит замене на alertMassage.scss
+@import 'alertMassage.scss';
+
+
+@import 'projects.scss';
+
+@import './project/project.scss';
+@import './project/list.scss';
+@import './project/insertText.scss';
+@import './project/insertAudio.scss';
+@import './project/formResult.scss';
+
+
+@import 'analysis.scss';
+
+@import 'articles.scss';
+@import 'article.scss';
+@import 'addArticle.scss';
+@import 'setting.scss';
+
+
+

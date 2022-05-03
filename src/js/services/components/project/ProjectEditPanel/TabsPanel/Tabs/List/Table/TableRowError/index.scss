@@ -1,0 +1,38 @@
+.projectTabList{
+    table{
+        tbody{
+            tr.trError{
+                background-color: #d49f9f;
+
+                td.listWords{
+                    input{
+                        color: #691515;
+                    }
+                }
+
+                td.errorMassage{
+                    font-size: 1.1em;
+                    padding: 0 1em;
+                    color: #d80000;
+                }
+
+            }
+
+            tr.trError:hover{
+
+                background-color: #d49f9f;
+
+                td.deletItem{
+                    span{
+                        color: #ffffff;
+                        border-color: #ffffff;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+

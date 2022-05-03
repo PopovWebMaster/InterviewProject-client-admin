@@ -1,0 +1,38 @@
+.projectTopInfoPanel{
+
+    font-size: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    //border-bottom: 1px solid #dcdcdc;
+
+    span{
+
+        width: auto;
+        color: #a39696;
+        font-size: 0.8em;
+        font-family: 'Kurale', serif;
+        text-decoration: none;
+        padding: 0 0.4em;
+        text-align: center;
+        margin: 0.4em 0.9em;
+    }
+}
+
+
+@media screen and (min-width: 420px) and (max-width: 670px){
+    .projectTopInfoPanel{
+        span{
+            font-size: 0.7em;
+        }
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 420px){
+    .projectTopInfoPanel{
+        span{
+            font-size: 0.6em;
+        }
+    }
+}

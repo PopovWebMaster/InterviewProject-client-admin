@@ -1,0 +1,55 @@
+.projectEditPanel{
+
+    font-size: 1em;
+
+    width: calc( 100% - 1.6em ); 
+    margin: 2em 0;
+
+    border: 1px solid #b6b3b3;
+    border-radius: 0.3em;
+
+    background-color: #eeeeee;
+    padding: 0.6em 0.7em;
+
+    -webkit-box-shadow: 0px 0px 0.5em -1px rgba(99,99,99,1);
+    -moz-box-shadow: 0px 0px 0.5em -1px rgba(99,99,99,1);
+    box-shadow: 0px 0px 0.5em -1px rgba(99,99,99,1);
+
+    
+    #workProject{
+        width: 100%;
+        //min-height: 600px;
+        //margin-top: 10px;
+        border: 1px solid #75757500;
+        border-radius: 0 0 5px 5px ;
+        background-color: #ffffff;
+
+        -webkit-box-shadow: inset 0px 0px 2px 0px rgba(120,120,120,1);
+        -moz-box-shadow: inset 0px 0px 2px 0px rgba(120,120,120,1);
+        box-shadow: inset 0px 0px 2px 0px rgba(120,120,120,1);
+
+
+    }
+}
+// @media screen and (min-width: 100px) and (max-width: 520px){
+//     .mainProject{
+
+        
+
+
+//         #butsProject{
+           
+    
+//             div{
+
+//                 width: 105px;
+//                 padding: 8px 8px;
+//                 border-radius: 4px 4px 0 0;
+//                 font-size: 12px;
+//                 line-height: 13px;
+//             }
+
+//         } 
+//     }
+
+// }

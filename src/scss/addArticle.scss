@@ -1,0 +1,74 @@
+#addArticle_admin{
+
+
+    >div.item_art{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;//flex-start flex-end center space-between space-around space-evenly
+        margin: 10px 0;
+
+        >div.nameItem_art{
+            min-width: 180px;
+            width: 30%;
+
+            font-size: 16px;
+            line-height: 30px;
+            font-family: 'El Messiri', sans-serif;
+            color: #787878;
+            user-select: none;
+            margin-left: 1%;
+
+
+            span{
+                    
+            }
+        }
+        >div.editItem_art{
+            width: 68%;
+        }   
+    }
+
+
+    .editTitle_art{
+        div.editItem_art{
+            input{
+                background-color: #00000008; 
+            }
+        }
+    }
+
+    .editSecondTitle_art{
+        div.editItem_art{
+            textarea{
+                background-color: #00000008; 
+            }
+        }
+    }
+
+    .editAlias_art{
+        div.editItem_art{
+            input{
+                background-color: #00000008; 
+            }
+        }
+    }
+
+
+
+
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 630px){
+	#addArticle_admin{
+        >div.item_art{
+            >div.nameItem_art{
+                width: 98%;
+            }
+            >div.editItem_art{
+                width: 98%;
+            }   
+        }
+    }
+}

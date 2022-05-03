@@ -1,0 +1,50 @@
+.editOrder_art{
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+    div.nameItem_art{
+
+        span.editOrder_num_art{
+            color: #079e97;
+        }
+
+    }
+
+    div.editItem_art{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;//flex-start flex-end center space-between space-around space-evenly
+        align-items: center;//stretch flex-start flex-end center baseline
+
+        div{
+
+            margin-right: 10px;
+            margin-left: 12px;
+            font-size: 14px;
+            line-height: 20px;
+            font-family: El Messiri,sans-serif;
+
+            select{
+                //height: 23px;
+                
+                //font-size: 15px;
+                
+
+                option{
+                    
+                    //font-size: 15px; 
+                }
+            }
+        }
+        
+
+    }
+
+
+
+
+
+
+
+
+}

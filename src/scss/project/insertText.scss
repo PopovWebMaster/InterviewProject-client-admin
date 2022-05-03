@@ -1,0 +1,246 @@
+#insertText{
+
+    div#insertTextRules{
+        width: 99%;
+        margin: 5px auto;
+        text-align: right;
+
+        span{
+            
+            margin: 0px 10px;
+            color: rgb(30, 144, 209);
+
+            font-size: 15px;
+            font-family: 'El Messiri', sans-serif;
+            line-height: 15px;
+
+            cursor: pointer;
+        }
+        span:hover{
+            text-decoration: underline;
+            color: rgb(13, 118, 179);
+        }
+        span:hover{
+            color: rgb(13, 118, 179);
+        }
+
+    }
+
+    @media screen and (min-width: 100px) and (max-width: 620px){
+        div#insertTextRules{
+            span{
+                font-size: 13px;
+                line-height: 13px;
+            }
+        }
+    }
+
+    
+    div#result_insertText{
+        border-bottom: 1px solid #eeeeee;
+        width: 99%;
+
+        div.resultTable{
+            border: 1px dashed #00000000;
+            margin-bottom: 20px;
+            background-color: #f8f8f8;
+            min-height: 100px;
+
+            user-select: text ;
+            
+        }
+    }
+
+    >div#dop_func_panel{
+        width: 97%;
+        margin: 13px auto 10px auto;
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start ; // space-between
+            align-content: center;
+
+            li{
+                user-select: none;
+               
+                color: #187340;
+                width: auto;
+                height: 26px;
+                margin:  auto 10px;
+                
+                text-align: center;
+                line-height: 24px;
+                background-color: #a497974a;
+                border: 1px solid #ccc5c4;
+                border-radius: 10px;
+
+
+
+                -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+                -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+
+            }
+            li:hover{
+                border: 1px solid #a497974a;
+                box-shadow: inset 0 1px 0 hsla(0,0%,100%,.2), 1px 1px 4px rgba(0,0,0,0.8); 
+            }
+
+            li:active{
+                box-shadow: inset 0 1px 0 hsla(0,0%,100%,0), 1px 1px 4px rgba(0,0,0,0); 
+            }
+
+            li.Abc{
+                font-size: 16px;
+                //font-family: 'Architects Daughter', cursive;
+                
+                padding: 0 7px;
+
+                span.icon-right{
+                    margin: 0 2px;
+                    font-size: 10px;
+                }
+            }
+
+
+
+            li.noActive{
+                display: none;
+                opacity: 0;
+            }
+
+
+        }
+    }
+   
+
+
+    >div{
+        width: 90%;
+        margin: 10px auto 30px;
+
+        textarea{
+            width: 100%;
+            display: block;
+            //margin: 10px auto;
+            width: 100%;
+            outline: none;
+            resize: none;
+            box-sizing: border-box;
+            padding: 15px;
+
+        }
+
+        div.buts_result_insertText, div.buts_set_insertText{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around ; // space-between
+            //align-content: flex-start;
+            width: 100%;
+            margin: 10px auto 15px auto;
+
+            span{
+                user-select: none;
+                width: auto; // 150px
+                margin: 20px auto 15px auto;
+                color: #dedede;
+                
+                font-size: 15px;
+                font-family: 'El Messiri', sans-serif;
+                text-align: center;
+                line-height: 28px;
+
+/*
+                border: 1px solid #747474;
+                border-radius: 6px;
+                background-color: #a09393f0;
+*/
+                background-color: #187340;
+                border: 1px solid #2b784d;
+                border-radius: 5px;/*0 4px 4px 0*/
+                -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+                -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+
+
+                padding: 3px 23px;
+            }
+            span:hover{
+
+                background-color: #056d32;
+                border: 1px solid #185533;
+                /*
+                -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+                -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+                box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);*/
+                box-shadow: inset 0 1px 0 hsla(0,0%,100%,.2), 1px 1px 4px rgba(0,0,0,0.8); 
+
+
+                color: #ffffff;
+               /* border: 1px solid #746767f0;
+                background-color: #887d7df0;*/
+                cursor: pointer;
+            }
+            span:active{
+                //color: #8ff1ba;
+                box-shadow: inset 0 1px 0 hsla(0,0%,100%,0), 1px 1px 4px rgba(0,0,0,0); 
+               
+            }
+
+            span.noActive{
+                display: none;
+                color: #ffffff;
+/*
+                border: 1px solid #747474;
+                background-color: #a09393f0;
+*/ 
+                background-color: #056d32;
+                border: 1px solid #1d673e;
+                /*
+                -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+                -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+                box-shadow: inset 0 1px 0 hsla(0,0%,100%,.2), 1px 1px 4px rgba(0,0,0,1);*/
+
+                opacity: 0;
+            }
+
+            span.noActive:hover{
+                color: #ffffff;
+                box-shadow: inset 0 1px 0 hsla(0,0%,100%,0.2), 1px 1px 4px rgba(0,0,0,0);
+            }
+
+            span.noActive:active{
+                color: #ffffff;
+                box-shadow: inset 0 1px 0 hsla(0,0%,100%,0), 1px 1px 4px rgba(0,0,0,0);
+               
+            }
+
+
+
+
+        }
+
+    }
+
+    div#set_insertText{
+
+        textarea{
+            
+            overflow: hidden;
+            //min-height: 500px;
+            border: 1px dashed #000000;
+            border-radius: 3px;
+
+        }
+
+        
+    }
+
+    
+}
+
+
+             

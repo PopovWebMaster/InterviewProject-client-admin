@@ -1,0 +1,52 @@
+.projectNavPanel{
+
+    font-size: 1em;
+
+    width: calc(100% + 2px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    user-select: none;
+
+    div{
+        width: 9em; // 
+        padding: 0.3em 1.5em; 
+        border-radius: 0.2em 0.2em 0 0;
+        color: #0077c0;
+        text-align: center;
+        font-size: 1em;
+        line-height: 2.1em;
+        font-family: 'El Messiri', sans-serif;
+        cursor: pointer;
+    }
+    div.active{
+        color: #2c4e63;
+        background-color: #ffffff;
+        border-left: 1px solid hsla(0,0%,45.9%,0);
+        border-top: 1px solid hsla(0,0%,45.9%,0);
+        border-right: 1px solid hsla(0,0%,45.9%,0);
+
+        -webkit-box-shadow: inset 0px 0px 2px 0px rgba(120,120,120,1);
+        -moz-box-shadow: inset 0px 0px 2px 0px rgba(120,120,120,1);
+        box-shadow: inset 0px 0px 2px 0px rgba(120,120,120,1);
+
+
+    }
+    div.active:hover{
+        color: #2c4e63;
+        background-color: #ffffff;
+    }
+
+    div:hover{
+        color: #2c4e63;
+        background-color: #f7f6f6;
+    }
+    div:active{
+        color: #ff0000;
+        background-color: #eeeeee;
+    }
+}
+
+

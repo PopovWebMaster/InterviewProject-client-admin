@@ -1,0 +1,187 @@
+#newProject {
+    width: 99%;
+    margin: 10px 0px;
+    $primary-height: 35px;
+
+    div.wrap{
+        position: relative;
+        //width: 100%;
+        //height: $primary-height;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+           
+            width: 0px;
+            transition: width 0.3s ease;
+            margin-right: -3px;
+            z-index: 100;
+
+            input{
+                width: 100%;
+                position: relative;
+                height: $primary-height;
+                padding: 0;
+                line-height: 35px;
+                opacity: 1;
+                border-radius: 4px 0 0 4px;
+                border: 1px solid #ccc; /* Исходная рамка вокруг поля */	
+                text-align: center;
+                outline: none;
+                font-size: 16px;
+                font-family: 'Molengo', sans-serif;
+                transition: max-width 0.3s ease;
+                z-index: 100;
+            } 
+            .error{
+                width: 100%;
+                padding: 0 0 0 13px;
+                color: red;
+                font-size: 14px;
+            }
+            .noActive{
+                display: none;
+            }
+
+            
+        }
+        
+
+        button{
+            width: 155px;
+            position: relative;
+            height: $primary-height+2;
+            padding: 0 15px;
+            text-align: center;
+            line-height: 35px;
+            font-size: 16px;
+            font-family: 'Kurale', serif;
+            outline: none;
+            background-color: #2b995b;
+            border: 1px solid rgb( 33, 126, 74 );
+            border-radius: 3px 3px 3px 3px;/*0 4px 4px 0*/
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+            -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.08);	
+            transition: width 0.2s ease;
+            z-index: 150;
+
+            span{
+                color: #fff;
+                opacity: 1;
+            }
+        }
+        
+    }
+}
+
+ul#projectList {
+    display: block;
+    width: 100%;
+
+    li{
+        margin: 0;
+        .projectLink{
+            display: block;
+            width: 100%;
+
+            a{
+                display: block;
+                width: calc( 100% - 40px );
+                color: #005a92;
+                font-size: 16px;
+                line-height: 32px;
+                font-family: 'El Messiri', sans-serif;
+                text-decoration: none;
+                padding: 3px 15px 0px 15px;
+                border-left: 10px solid #00000000;
+
+            }
+            a:hover {
+                color: #880c1d;
+                background-color: #c4c4c43b;
+                border-left: 10px solid #dcdcdc;
+            }
+            a:active{
+                color: #556acc;
+                background-color: #c4c4c40f;
+                border-left: 10px solid #dcdcdc;
+            }
+
+        }
+        .projectDescription{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            border-bottom: 1px solid #dcdcdc;
+
+            span{
+
+                width: 17%;
+                color: #a39696;
+                font-size: 13px;
+                font-family: 'Kurale', serif;
+                text-decoration: none;
+                padding: 0px 5px;
+                text-align: center;
+                margin: 4px 12px;
+            }
+            span.project_published{
+                color: #2b995b;
+            }
+            span.delete{
+                width: 60px;
+                text-decoration: none;
+                padding: 0px 5px;
+                text-align: center;
+                margin: 0px 12px 2px 12px;
+
+                div.deleteBut{
+
+                    display: none; 
+                    border: 1px solid #eb8b8b00;
+                    border-radius: 12px;
+                    padding: 3px 5px;
+                    margin: auto;
+                    color: #da0000;
+                    font-size: 10px;
+                    font-family: 'Kurale', serif;
+                }
+                div.deleteBut:hover{
+                    border: 1px solid #eb8b8b;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    
+                }
+                div.deleteBut:active{
+                    border: 1px solid #ff0000;
+                    border-radius: 12px;
+                }
+
+            }
+
+        }
+
+    }
+
+
+    li:hover{
+        .projectDescription{
+            span.delete{
+                div.deleteBut{
+                    display: block; 
+                }
+            }
+        }
+    }
+}
+
+
+

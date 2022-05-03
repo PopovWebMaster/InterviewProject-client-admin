@@ -1,0 +1,264 @@
+table#projectList{
+    width: 100%;
+    
+    
+    
+    caption{
+        user-select: none;
+        width: 100%;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'El Messiri', sans-serif;
+        text-align: center;
+        line-height: 28px;
+
+    }
+
+    thead{
+
+
+        tr{
+
+
+            th{
+                user-select: none;
+                color: #a39696;
+                font-size: 13px;
+                line-height: 28px;
+                font-family: 'Kurale', serif;
+                padding: 0px 5px;
+                text-align: center;
+                margin: 4px 12px;
+
+
+            }
+            th:last-child{
+                user-select: none;
+                width: 51px;
+                opacity: 0;
+            }
+        }
+    }
+
+
+    tbody{
+        width: 100%;
+        margin: 10px 0;
+
+
+        tr{
+            width: 100%;
+            background-color: rgba(43,153,115,.10);
+
+            th.num{
+                width: 30px;
+                color: #a39696;
+                font-size: 13px;
+                line-height: 28px;
+                font-family: 'Kurale', serif;
+                padding: 0px 5px;
+                text-align: center;
+            }
+
+            th.listWords{
+                width: auto;
+                color: #a39696;
+                font-size: 13px;
+                line-height: 28px;
+                font-family: 'Kurale', serif;
+                padding: 0px 0px;
+                text-align: center;
+
+                //display: flex;
+                //flex-direction: row;
+                //flex-wrap: wrap;
+                //justify-content: flex-start;
+
+
+                input:first-child{
+                    color: #0077c0;
+                    width: 39%;
+                    //min-width: 190px;
+                    background-color: #00000000;
+                    border: 1px solid #00000000;
+
+                    
+                } 
+                input:last-child{
+                    width: 57%;
+                    //min-width: 286px;
+                    background-color: #00000000;
+                    border: 1px solid #00000000;
+                }
+
+            }
+            th.isAudio{
+                width: 30px;
+                color: #a39696;
+                font-size: 13px;
+                line-height: 28px;
+                font-family: 'Kurale', serif;
+                padding: 0px 5px;
+                text-align: center;
+
+                span{
+                    color: red;
+                    font-size: 13px;
+                    line-height: 28px;
+                    font-family: 'Kurale', serif;
+                    padding: 0px 5px;
+                    text-align: center;
+                }
+
+                span.icon-ok-1{
+                    color: #20bd03;
+                }
+            }
+
+            th.isRepeat{
+                max-width: 70px;
+                min-width: 30px;
+                color: #20bd03;
+                font-size: 13px;
+                //line-height: 28px;
+                font-family: 'Kurale', serif;
+                padding: 0px 3px;
+                text-align: center;
+
+                span.badFirst{
+                    display: block;
+                    width: 100%;
+                    color: red;
+                    font-size: 13px;
+                    line-height: 13px;
+                    font-family: 'Kurale', serif;
+                    padding: 0px 5px;
+                    text-align: center;
+                }
+
+                span.badLast{
+                    display: block;
+                    width: 100%;
+                    color: #a39696;
+                    text-indent: 0px;
+                    font-size: 10px;
+                    line-height: 10px;
+                    font-family: 'Kurale', serif;
+                    padding: 0px 0px 3px;
+                    text-align: center;
+                    margin: 4px 0px 2px;
+                }
+            }
+            th.deletItem{
+                //width: 40px;
+                text-decoration: none;
+                padding: 0px 5px;
+                text-align: center;
+                margin: 0px 12px 2px 12px;
+
+                span{
+                    user-select: none;
+                    display: none; 
+                    border: 1px solid #eb8b8b00;
+                    border-radius: 12px;
+                    padding: 3px 5px;
+                    margin: auto;
+                    color: #da0000;
+                    font-size: 10px;
+                    line-height: 12px;
+                    font-family: 'Kurale', serif;
+                }
+                span:hover{
+                    border: 1px solid #eb8b8b;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    
+                }
+                span:active{
+                    border: 1px solid #ff0000;
+                    border-radius: 12px;
+                }
+
+                
+            }
+
+        }
+
+        tr:hover{
+            background-color: rgba(43,153,115,.17);
+            th.deletItem{
+                span{
+                    display: block
+
+                }
+            }
+        }
+    }
+
+    tfoot{
+        user-select: none;
+        //width: 100%;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'El Messiri', sans-serif;
+        text-align: center;
+        line-height: 28px;
+
+        tr.totalFoot{
+            th{
+                text-align: left; 
+            }
+            th:last-child{
+                text-align: center; 
+            }
+
+
+        }
+    }
+
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 100px) and (max-width: 900px){
+	table#projectList{
+        
+    
+        tbody{
+            
+            tr{
+
+                th.listWords{
+
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                   
+                    input:first-child{
+                        width: 99%;
+                        text-indent: 10px;
+                        //min-width: 190px;
+                    } 
+                    input:last-child{
+                        text-indent: 5px;
+                        width: 99%;
+                        //min-width: 190px;
+                    }
+                }
+                
+            }
+    
+            
+        }
+    
+    }
+    
+    
+
+}
+

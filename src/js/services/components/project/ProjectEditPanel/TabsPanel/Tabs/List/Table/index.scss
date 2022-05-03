@@ -1,0 +1,261 @@
+.projectTabListTable{
+    width: 100%;
+    font-size: 1em;
+
+    table{
+
+        font-size: 1em;
+        width: 100%;
+
+        thead{
+
+            tr{
+                font-size: 0.8em; 
+                line-height: 2em; 
+                font-family: 'Kurale', serif;
+                text-align: center;
+                color: #a39696;
+                user-select: none;
+
+                th{
+                    padding: 0 0.3em;
+                    margin: 0.3em 0.9em;
+                }
+
+                th:last-child{
+                    user-select: none;
+                    opacity: 0;
+                }
+            }
+        }
+
+
+        tbody{
+            width: 100%;
+            margin: 1em 0;
+
+
+            tr{
+                width: 100%;
+                background-color: rgba(43,153,115,.10);
+
+                font-size: 0.8em; // 13px
+                line-height: 2.4em; //28px 
+
+                td.num{
+                    width: 2.4em; // 30px
+                    color: #a39696;
+                    // font-size: 13px; // 
+                    // line-height: 28px; // 
+                    font-family: 'Kurale', serif;
+                    padding: 0px 5px;
+                    text-align: center;
+                }
+
+                td.listWords{
+                    width: auto;
+                    color: #a39696;
+                    // font-size: 13px;
+                    // line-height: 28px;
+                    font-family: 'Kurale', serif;
+                    padding: 0px 0px;
+                    text-align: center;
+
+                    //display: flex;
+                    //flex-direction: row;
+                    //flex-wrap: wrap;
+                    //justify-content: flex-start;
+                    input{
+                        font-size: 1.08em;
+                        line-height: 2em;
+                    }
+
+
+                    input:first-child{
+                        color: #0077c0;
+                        width: 39%;
+                        //min-width: 190px;
+                        background-color: #00000000;
+                        border: 1px solid #00000000;
+
+                        
+                    } 
+                    input:last-child{
+                        width: 57%;
+                        //min-width: 286px;
+                        background-color: #00000000;
+                        border: 1px solid #00000000;
+                    }
+
+                }
+                td.isAudio{
+                    width: 2em;
+                    color: #a39696;
+                    // font-size: 13px;
+                    // line-height: 28px;
+                    font-family: 'Kurale', serif;
+                    padding: 0 0.4em;
+                    text-align: center;
+
+                    span{
+                        color: red;
+                        // font-size: 13px;
+                        // line-height: 28px;
+                        font-family: 'Kurale', serif;
+                        // padding: 0px 5px;
+                        text-align: center;
+                    }
+
+                    span.icon-ok-1{
+                        color: #20bd03;
+                    }
+                }
+
+                td.isRepeat{
+                    max-width: 70px;
+                    min-width: 2em;
+                    color: #20bd03;
+                    // font-size: 13px;
+                    //line-height: 28px;
+                    font-family: 'Kurale', serif;
+                    padding: 0 0.4em;
+                    text-align: center;
+
+                    span.badFirst{
+                        display: block;
+                        // width: 100%;
+                        color: red;
+                        font-size: 0.9em;
+                        line-height: 0.9em;
+                        font-family: 'Kurale', serif;
+                        // padding: 0px 5px;
+                        text-align: center;
+                    }
+
+                    span.badLast{
+                        display: block;
+                        // width: 100%;
+                        color: #a39696;
+                        text-indent: 0px;
+                        font-size: 0.8em;
+                        line-height: 0.8em;
+                        font-family: 'Kurale', serif;
+                        padding: 0px 0px 0.6em;
+                        text-align: center;
+                        margin: 0.2em 0px 0.1em;
+                    }
+                }
+                td.deletItem{
+                    width: 5em;
+                    text-decoration: none;
+                    text-align: center;
+
+                    span{
+                        width: 4em;
+                        user-select: none;
+                        display: none; 
+                        margin: 0 auto;
+                        border: 1px solid #eb8b8b00;
+                        border-radius: 1em;
+                        padding: 0.5em 0.6em;
+                        margin: auto;
+                        color: #da0000;
+                        font-size: 0.8em;
+                        line-height: 1em;
+                        font-family: 'Kurale', serif;
+                    }
+                    span:hover{
+                        border: 1px solid #eb8b8b;
+                        cursor: pointer;
+                        
+                    }
+                    span:active{
+                        border: 1px solid #ff0000;
+                    }
+
+                    
+                }
+
+            }
+
+            tr:hover{
+                background-color: rgba(43,153,115,.17);
+                td.deletItem{
+                    span{
+                        display: block
+
+                    }
+                }
+            }
+        }
+
+        tfoot{
+            user-select: none;
+            color: #000000;
+            font-size: 0.9em;
+            font-family: 'El Messiri', sans-serif;
+            text-align: center;
+            line-height: 1.8em;
+
+            tr.totalFoot{
+                th{
+                    text-align: left; 
+                }
+                th:last-child{
+                    text-align: center; 
+                }
+
+
+            }
+        }
+    }
+
+
+
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 100px) and (max-width: 900px){
+	.projectTabList{
+        table{
+            tbody{
+            
+                tr{
+
+                    td.listWords{
+                        // width: 99%;
+                        // display: flex;
+                        // flex-direction: row;
+                        // flex-wrap: wrap;
+                        // justify-content: flex-start;
+                    
+                        input:first-child{
+                            width: calc( 100% - 6px );
+                            text-indent: 0.8em;
+                        } 
+                        input:last-child{
+                            text-indent: 0.4em;
+                            width: calc( 100% - 6px );
+                        }
+                    }
+                    
+                }
+        
+                
+            } 
+        }
+        
+    
+       
+    
+    }
+    
+    
+
+}

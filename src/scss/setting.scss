@@ -1,0 +1,59 @@
+#settings_admin{
+
+    
+
+    >div.item_set{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;//flex-start flex-end center space-between space-around space-evenly
+        align-items: center; // stretch flex-start flex-end center baseline
+        margin: 10px 0;
+
+        >div.nameItem_set{
+            min-width: 180px;
+            width: 45%;
+
+            font-size: 16px;
+            line-height: 20px;
+            font-family: 'El Messiri', sans-serif;
+            color: #787878;
+            user-select: none;
+            margin-left: 1%;
+            span{
+                    
+            }
+        }
+        >div.editItem_set{
+            width: 53%;
+
+            input{
+                width: 99%;
+                text-indent: 13px;
+            }
+
+            input{
+                background-color: #00000008; 
+            }
+            textarea{
+                background-color: #00000008; 
+            }
+
+        }   
+    }
+
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 630px){
+	#settings_admin{
+        >div.item_set{
+            >div.nameItem_set{
+                width: 98%;
+            }
+            >div.editItem_set{
+                width: 98%;
+            }   
+        }
+    }
+}

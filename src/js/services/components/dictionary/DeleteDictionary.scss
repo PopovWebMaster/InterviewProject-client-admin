@@ -1,0 +1,29 @@
+#editDictionary .editDelete_dic{
+
+    width: 100%;
+
+    margin: 20ps 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: El Messiri,sans-serif;
+    color: rgb(29, 60, 236);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;//flex-start flex-end center space-between space-around space-evenly
+    align-items: center;//stretch flex-start flex-end center baseline
+
+    span{
+        cursor: pointer;
+        user-select: none;
+    }
+    span:hover{
+        text-decoration: underline;
+    }
+    span:active{
+        color:red;
+        text-decoration: underline;
+    }
+
+}

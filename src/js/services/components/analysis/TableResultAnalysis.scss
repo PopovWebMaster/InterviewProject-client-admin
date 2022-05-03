@@ -1,0 +1,240 @@
+#analysis_List{
+    width: 100%;
+
+    caption{
+        user-select: none;
+        width: 100%;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'El Messiri', sans-serif;
+        text-align: center;
+        line-height: 28px;
+
+    }
+    thead{
+
+        tr{
+            th{
+                user-select: none;
+                color: #a39696;
+                font-size: 13px;
+                line-height: 28px;
+                font-family: 'Kurale', serif;
+                padding: 0px 5px;
+                text-align: center;
+                margin: 4px 12px;
+            }
+            
+        }
+    }
+
+    tbody{
+        width: 100%;
+        margin: 10px 0;
+
+
+        tr{
+            width: 100%;
+
+            th:first-child{
+                width: 30px;
+                input{
+                    height: 16px;
+                    width: 16px;
+    
+                }
+
+            }
+            
+
+            th.num{
+                width: 30px;
+                color: #635a5a;
+                font-size: 13px;
+                line-height: 28px;
+                font-family: 'Kurale', serif;
+                padding: 0px 5px;
+                text-align: center;
+            }
+
+            th.isUniq{
+                width: 15%;
+                max-width: 180px;
+                min-width: 100px;
+                padding: 0px 3px;
+                text-align: center;
+                font-family: 'Kurale', serif;
+
+                span{
+                    width: 100%;
+                    display: block;
+                }
+
+                span.uniq{
+                    color: #20bd03;
+                    font-size: 13px;
+                }
+
+                span.notUniq{
+                    color: red;
+                    font-size: 13px;
+                }
+                span.project_name{
+                    color: red;
+                    font-size: 11px;
+                    line-height: 18px;
+                    font-family: 'Kurale', serif;
+                }
+                span.old_words{
+                    color: #a39696;
+                    text-indent: 0px;
+                    font-size: 11px;
+                    line-height: 18px;
+                    font-family: 'Kurale', serif;
+                }
+
+                
+            }
+        }
+
+
+
+        tr.trSuccess{
+            background-color: rgba(43,153,115,.20);
+            th.listWords{
+                width: auto;
+                color: #a39696;
+                font-size: 13px;
+                line-height: 28px;
+                font-family: 'Kurale', serif;
+                padding: 0px 0px;
+                text-align: center;
+
+                input:first-child{
+                    color: #0077c0;
+                    width: 39%;
+                    min-width: 190px;
+                    background-color: #00000000;
+                    border: 1px solid #00000000;
+  
+                } 
+                input:last-child{
+                    width: 57%;
+                    min-width: 286px;
+                    background-color: #00000000;
+                    border: 1px solid #00000000;
+                }
+
+            }
+
+        }
+        tr.trNotSuccess{
+            background-color: #f72d2d4f;
+            border: 2px solid #000000;
+
+            th.listWords{
+                width: auto;
+                color: #a39696;
+                font-size: 13px;
+                line-height: 28px;
+                font-family: 'Kurale', serif;
+                padding: 0px 0px;
+                text-align: center;
+
+                input{
+                    //padding-left: 30px;
+                    text-indent: 25px;
+                    color: red;
+                    width: 98%;
+                    background-color: #00000000;
+                    border: 1px solid #00000000;
+                } 
+
+            }
+        }
+
+        tr.analysis_err_massage{
+            background-color: #f72d2d4f;
+            //text-indent: 30px;
+            color: #a10505;
+            padding: 0px 0px;
+            font-size: 15px;
+            font-family: El Messiri,sans-serif;
+            line-height: 22px;
+            border-spacing: 7px 5px;
+            th{
+                
+                
+            }
+
+        }  
+    }
+
+    tfoot{
+        user-select: none;
+        color: #000000;
+        font-size: 15px;
+        font-family: 'El Messiri', sans-serif;
+        text-align: center;
+        line-height: 28px;
+    }
+
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 750px){
+    #analysis_List{
+        tbody{
+
+            tr.trSuccess{
+                th.listWords{
+                    input:first-child{
+                        text-indent: 15px;
+                        width: 98%;
+                    }
+                    input:last-child{
+                        text-indent: 15px;
+                        width: 98%;
+                    }
+                }
+
+
+            }
+
+
+
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
